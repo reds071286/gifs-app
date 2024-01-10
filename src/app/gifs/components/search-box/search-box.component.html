@@ -1,0 +1,12 @@
+<h5>Buscar:</h5>
+<input type="text"
+class="form-control"
+placeholder="Buscar gifs..."
+(keyup.enter)="searchTag()"
+#txtTagInput>
+
+<!--el #txtTagInput nos sirve para crear una referencia local y ponerle un nombre
+por asi decirlo a la caja de texto y asi poder hacer referencia a su valor.
+con el (keyup.enter) accedemos al evento de cuando ya haya soltado alguna tecla
+el usuario pero en este caso solo que sea un enter, entonces se ejecutará la función
+searchTag-->
